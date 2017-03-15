@@ -92,15 +92,19 @@ function isPrime(num) {
 }
 
 function returnFirst(arr) {
+	return arr[0];
 	//return the first item from the array
 }
 
 function returnLast(arr) {
+	var last = arr.length - 1;
+	return arr[last];
 	//return the last item of the array
 }
 
 function getArrayLength(arr) {
 	//return the length of the array
+	return arr.length;
 }
 
 function incrementByOne(arr) {
