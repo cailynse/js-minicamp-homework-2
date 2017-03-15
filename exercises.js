@@ -37,7 +37,11 @@ function isTenOrFive(num) {
 
 function isInRange(num) {
 	//return true if num is less than 50 and greater than 20
-	if (num)
+	if (num < 50 && num > 20) {
+		return true;
+	} else {
+		return false;
+	}
 }
 
 function isInteger(num) {
@@ -47,6 +51,7 @@ function isInteger(num) {
 	//-10 -> true
 	//otherwise return false
 	//hint: you can solve this using Math.floor
+	return Number.isInteger(num);
 }
 
 function fizzBuzz(num) {
@@ -54,6 +59,15 @@ function fizzBuzz(num) {
 	//if num is divisible by 5 return 'buzz'
 	//if num is divisible by 3 & 5 return 'fizzbuzz'
 	//otherwise return num
+	if (num % 3 === 0 && num % 5 === 0) {
+		return 'fizzbuzz';
+	} else if (num % 3 === 0) {
+		return 'fizz';
+	} else if (num % 5 === 0) {
+		return 'buzz';
+	} else {
+		return num;
+	}
 }
 
 function isPrime(num) {
